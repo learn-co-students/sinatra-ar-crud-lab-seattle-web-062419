@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+</style>
+</head>
+<body>
+<% Article.all.each do |a| %>
+<div>
+Title: <%= a.title %>
+<br>
+Content: <%= a.content %>
+<br>
+<br>
+</div>
+<% end %>
+</body>
+</html>
